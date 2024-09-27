@@ -1,0 +1,10 @@
+<label>Enter your name:</label>
+<input [(ngModel)]="name" placeholder="name">
+<h1>Welcome {{ name }} <span [hidden]="!name">!</span></h1>
+<h2>Hello Angular</h2>
+<p>Angular 16 represents modular application architecture</p>
+<child-comp><h2>Welcome {{ name }} <span [hidden]="!name"></span></h2></child-comp>
+<p>Hello {{ name }}</p>
+<child-comp [userName]="name2" [userAge]="age"/>
+<input type="text" [(ngModel)]="name2">
+w

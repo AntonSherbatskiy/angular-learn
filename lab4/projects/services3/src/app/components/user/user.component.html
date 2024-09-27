@@ -1,0 +1,27 @@
+<div class="table-title">
+	<h3>Users table</h3>
+</div>
+<table class="table-fill">
+	<thead>
+		<tr>
+			<th class="text-left">Id</th>
+			<th class="text-left">Name</th>
+			<th class="text-left">Username</th>
+			<th class="text-left">Email</th>
+			<th class="text-left">Phone</th>
+			<th class="text-left">Website</th>
+		</tr>
+	</thead>
+	<tbody class="table-hover">
+		@for (user of users; track $index) {
+			<tr>
+				<td class="text-left">{{user.id}}</td>
+				<td class="text-left">{{user.name}}</td>
+				<td class="text-left">{{user.username}}</td>
+				<td class="text-left">{{user.email}}</td>
+				<td class="text-left">{{user.phone}}</td>
+				<td class="text-left">{{user.website}}</td>
+			</tr>
+		}
+	</tbody>
+</table>

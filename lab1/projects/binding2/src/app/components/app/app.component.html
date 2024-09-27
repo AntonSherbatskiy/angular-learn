@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="box-250" [class.bg-red]="isRed"></div>
+    <div class="box-250" [class.bg-red]="!isRed"></div>
+    <label>Change box: </label>
+    <input type="checkbox" [(ngModel)]="isRed">
+    <div class="box-250" [class]="blueBackground"></div>
+    <br>
+    <div class="box-250" [style.background-color]="isYellow ? 'yellow' : 'blue'"></div>
+    <div class="box-250" [style.background-color]="isYellow ? 'blue' : 'yellow'"></div>
+    <button (click)="isYellow = !isYellow">Change yellow and blue</button>
+
+</div>

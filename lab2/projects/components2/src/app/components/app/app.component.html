@@ -1,0 +1,5 @@
+<child-comp (onChanged)="onChange($event)" [(userName)]="name" [userAge]="age"/>
+<div>Selected name: {{ name }}</div>
+<br>
+<input type="number" [(ngModel)]="age">
+<h2>Clicks: {{ clicks }}</h2>

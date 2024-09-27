@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>Purchase List</h1>
+
+    <label for="itemName">Item Name:</label>
+    <input type="text" id="itemName" name="itemName" #name required>
+
+    <label for="price">Price:</label>
+    <input type="number" id="price" name="price" step="0.01" min="0" #price required>
+
+    <input type="submit" value="Add Item" (click)="add(name.value, +price.value)">
+
+    <div class="purchase-list">
+        @for (item of products; track item.guid) {
+        <app-purchase-item [purchaseItem]="item" (onDeleteEvent)="remove($event)"/>
+        }
+    </div>
+</div>

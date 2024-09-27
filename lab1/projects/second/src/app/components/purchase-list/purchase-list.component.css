@@ -1,0 +1,40 @@
+.container-top {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="number"], input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 15px; /* Add spacing between input elements */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 22px); /* Adjust width to account for padding and border */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.purchase-list {
+    margin-top: 20px;
+}

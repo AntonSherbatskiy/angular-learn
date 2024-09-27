@@ -1,0 +1,17 @@
+.box-250 {
+    height: 250px;
+    width: 250px;
+    border: 2px solid black;
+}
+
+.bg-red {
+    background: red;
+}
+
+.bg-blue {
+    background: blue;
+}
+
+.bg-yellow {
+    background: yellow;
+}

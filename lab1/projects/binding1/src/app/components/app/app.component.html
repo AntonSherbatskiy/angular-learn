@@ -1,0 +1,41 @@
+<div class="container-top">
+    <div class="left">
+        <input [value]="name"/>
+        <div>
+            Name = {{ name }}
+        </div>
+    </div>
+    <div class="right">
+        <input [value]="age">
+        <div>
+            Age = {{ age }}
+        </div>
+    </div>
+</div>
+<div class="container-bottom">
+    <table border="1">
+        <tr>
+            <td [attr.colspan]="colspan">One-Two</td>
+        </tr>
+        <tr>
+            <td>Three</td>
+            <td>Four</td>
+        </tr>
+        <tr>
+            <td>Five</td>
+            <td>Six</td>
+        </tr>
+    </table>
+    <div class="counter">
+        Counts: {{ counter1 }}
+        <button (click)="increase1()">Increase 1</button>
+    </div>
+    <div class="counter">
+        Counts: {{ counter2 }}
+        <button (click)="increase2('Increased counter: ' + (counter2 + 1))">Increase 2</button>
+    </div>
+
+    <p>Привіт {{ name }}</p>
+    <input type="text" [(ngModel)]="name"/> <br><br>
+    <input type="text" [(ngModel)]="name"/>`
+</div>

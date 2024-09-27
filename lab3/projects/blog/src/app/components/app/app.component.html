@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Angular Components</h1>
+    <app-post-form (onAddPost)="updatePosts($event)"/>
+    <hr>
+    <input type="text" [(ngModel)]="search" placeholder="Search...">
+    @for (p of posts | filter: search; track p.id) {
+        <app-post [myPost]="p" (onPostRemove)="deletePost($event)">
+            @if (p.text.length > 20) {
+                <small>Post is long</small>
+            } @else {
+                <small>Post is short</small>
+            }
+        </app-post>
+    }
+</div>

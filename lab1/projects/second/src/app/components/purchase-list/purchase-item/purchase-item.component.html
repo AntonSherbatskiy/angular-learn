@@ -1,0 +1,28 @@
+<!--<div class="purchase-item">-->
+<!--    -->
+<!--</div>-->
+
+<div [ngTemplateOutlet]="itemTemplate"></div>
+
+<ng-template #itemTemplate>
+    <span
+        [ngClass]="{'line-through': purchaseItem.isBuy, 'item-name': true}">
+        {{ this.purchaseItem.name }}
+    </span>
+    <span
+        class="price">
+        ${{ this.purchaseItem.price }}
+    </span>
+    <div>
+        <button
+            (click)="buy()"
+            class="buy-button">
+            Buy
+        </button>
+        <button
+            (click)="delete()"
+            class="remove-button">
+            Remove
+        </button>
+    </div>
+</ng-template>
